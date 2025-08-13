@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Screen Chaos</title>
+<style>
+body { font-family: ui-sans-serif, system-ui, sans-serif; margin: 12px; min-width: 280px; }
+h1 { font-size: 16px; margin-bottom: 10px; }
+.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; margin-bottom: 10px; background: #fff; }
+.row { display: flex; align-items: center; justify-content: space-between; }
+label { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+</style>
+</head>
+<body>
+<h1>Screen Chaos</h1>
+
+<div class="card"><label>Bouncing DVD<input type="checkbox" class="chaos-toggle" data-type="dvd"></label></div>
+<div class="card"><label>Confetti<input type="checkbox" class="chaos-toggle" data-type="confetti"></label></div>
+<div class="card"><label>Snow<input type="checkbox" class="chaos-toggle" data-type="snow"></label></div>
+<div class="card"><label>Emoji Storm<input type="checkbox" class="chaos-toggle" data-type="emoji"></label></div>
+<div class="card"><label>Cursor Follower<input type="checkbox" class="chaos-toggle" data-type="cursor"></label></div>
+
+<div class="card">
+<label>Chaos Level<input type="range" min="1" max="5" value="3" id="chaosLevel"></label>
+</div>
+
+<div class="card">
+  <button id="shutOffButton" style="width: 100%; padding: 8px; font-weight: bold;">Shut Off</button>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
